@@ -20,7 +20,7 @@ export class EntityService {
     }
   }
 
-  async getBy(propertyName: string, index: string, value: any, limit?: number): Promise<any[]> {
+  async pizza(propertyName: string, index: string, value: any, limit?: number): Promise<any[]> {
     const query = this.entityModel.query(propertyName).eq(value).using(index).limit(limit);
     try {
       const response = await query.exec();
