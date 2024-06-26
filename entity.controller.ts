@@ -17,6 +17,8 @@ export class EntityController {
     @Query('value') value: any,
     @Query('limit') limit?: number,
   ) {
-    return this.entityService.getBy(propertyName, index, value, limit);
+    return this.entityService.pizza(propertyName, index, value, limit);
   }
 }
+
+
